@@ -1,0 +1,47 @@
+
+<head>
+
+<title>Radio Player</title>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/lunaradio-sincors.js"></script>
+
+<div id="lunaradio" style="width:100%; height:100%;background: #000000 url(js/portada.jpg) bottom / cover no-repeat;">loading...</div>
+
+
+<script>
+  $("#lunaradio").lunaradio({
+  userinterface: "big",
+  backgroundcolor: "linear-gradient(135deg, rgba(0, 0, 0, 0.3) 100%, rgba(255, 255, 255, 0.3) 0%)",
+  fontcolor: "#ffffff",
+  hightlightcolor: "#ff4646",
+  fontname: "Open+Sans",
+  googlefont: "http://fonts.googleapis.com/css?family=Open+Sans%3A400%2C600&ver=2.0.4",
+  fontratio: "0.3",
+  radioname: "Radio Extrema", //nombre de radio
+  scroll: "true",
+  coverimage: "https://i.imgur.com/bqFKrzh.png", //link o ruta de logo radio
+  onlycoverimage: "false", //true para mostrar solo logo radio
+  coverstyle: "animated",
+  usevisualizer: "real",
+  visualizertype: "4",
+  metadatatechnic: " ",
+  ownmetadataurl: "",
+  usestreamcorsproxy: "false", //true o false
+  corsproxy: " ",
+  streamurl: "https://streamlive2.hearthis.at:8000/10285659.ogg",
+  streamtype: "radiozeno", //shoutcast2, icecast2, radiozeno, radionomy, radiojar, radioco
+  icecastmountpoint: "/radio.mp3",
+  shoutcastpath: "/stream",
+  shoutcastid: "1",
+  streamsuffix: "",
+  radionomyid: "",
+  radionomyapikey: "",
+  radiozenoid: " ",
+  radiojarid: "",
+  radiocoid: "",
+  itunestoken: "1000lIPN",
+  metadatainterval: "20000",
+  volume: "100",
+  debug: "false",
+  });
+</script>
